@@ -3,6 +3,8 @@ import { cartItem, useStateDispatch } from './AppState';
 
 export interface AddToCartProps {
     addToCart: (item: Omit<cartItem, 'qty'>) => void;
+
+
 }
 export function withAddToCart<OriginalProps extends AddToCartProps>(ChildComponent: React.ComponentType<OriginalProps>
 ) {
